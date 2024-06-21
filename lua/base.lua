@@ -1,3 +1,6 @@
+local cmd = vim.cmd
+local g = vim.g
+
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
@@ -16,5 +19,7 @@ vim.opt.shiftwidth = 2
 vim.tabstop = 4
 vim.opt.ai = true
 vim.opt.si = true
+
+cmd "hi Normal guibg=NONE ctermbg=NONE"
 
 vim.opt.clipboard = 'unnamedplus'
