@@ -32,7 +32,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
-require("base")
 require("lazy").setup("plugins")
 require("lualine").setup()
 require("mini.pairs").setup()
