@@ -10,9 +10,3 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require("lazy").setup("plugins")
 require("lualine").setup()
 require("mini.pairs").setup()
-require("neo-tree").setup({
-  source_selector = {
-    winbar = false,
-    statusline = false,
-  }
-})
